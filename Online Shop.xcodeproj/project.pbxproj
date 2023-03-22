@@ -7,18 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6708583129C1DAE50039A5ED /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708583029C1DAE50039A5ED /* Color+Extension.swift */; };
+		6708583329C1DB0E0039A5ED /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708583229C1DB0E0039A5ED /* String+Extension.swift */; };
+		6708583529C2CA0F0039A5ED /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708583429C2CA0F0039A5ED /* SignInViewModel.swift */; };
+		6708583729C2CA4A0039A5ED /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708583629C2CA4A0039A5ED /* LoginViewModel.swift */; };
+		6708584429C41D0F0039A5ED /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708584329C41D0F0039A5ED /* DataManager.swift */; };
+		670C86EE29CB7354000D8F20 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86ED29CB7354000D8F20 /* TabBarView.swift */; };
+		670C86F029CB762B000D8F20 /* CartTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86EF29CB762B000D8F20 /* CartTabView.swift */; };
+		670C86F229CB7649000D8F20 /* ChatTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86F129CB7649000D8F20 /* ChatTabView.swift */; };
+		6715666729C8689900FD7543 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715666629C8689900FD7543 /* APIServiceProtocol.swift */; };
+		6715666929C86A2700FD7543 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715666829C86A2700FD7543 /* APIClient.swift */; };
+		6715666B29C8707A00FD7543 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715666A29C8707A00FD7543 /* Products.swift */; };
+		6715666D29C870BC00FD7543 /* GoodsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715666C29C870BC00FD7543 /* GoodsStore.swift */; };
 		6730229229BBABD9003C6E40 /* Online_ShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730229129BBABD9003C6E40 /* Online_ShopApp.swift */; };
-		6730229429BBABD9003C6E40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730229329BBABD9003C6E40 /* ContentView.swift */; };
 		6730229629BBABD9003C6E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6730229529BBABD9003C6E40 /* Assets.xcassets */; };
 		6730229929BBABD9003C6E40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6730229829BBABD9003C6E40 /* Preview Assets.xcassets */; };
+		673022A129BBAC93003C6E40 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022A029BBAC93003C6E40 /* SignInView.swift */; };
+		673022A329BBACAE003C6E40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022A229BBACAE003C6E40 /* LoginView.swift */; };
+		673022A529BBACBA003C6E40 /* ProfileTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022A429BBACBA003C6E40 /* ProfileTabView.swift */; };
+		673022A729BBACD1003C6E40 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022A629BBACD1003C6E40 /* HomeTabView.swift */; };
+		673022A929BBACDD003C6E40 /* FavouritesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022A829BBACDD003C6E40 /* FavouritesTabView.swift */; };
+		673022AB29BBC7E6003C6E40 /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022AA29BBC7E6003C6E40 /* SignInButtonView.swift */; };
+		673022AD29BBC7F6003C6E40 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022AC29BBC7F6003C6E40 /* TextFieldView.swift */; };
+		673022AF29BBC810003C6E40 /* SignWithView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022AE29BBC810003C6E40 /* SignWithView.swift */; };
+		673022C129BBEBF2003C6E40 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BA29BBEBF1003C6E40 /* Montserrat-Bold.ttf */; };
+		673022C229BBEBF2003C6E40 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BB29BBEBF2003C6E40 /* Montserrat-Regular.ttf */; };
+		673022C329BBEBF2003C6E40 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BC29BBEBF2003C6E40 /* Montserrat-Thin.ttf */; };
+		673022C429BBEBF2003C6E40 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BD29BBEBF2003C6E40 /* Montserrat-Medium.ttf */; };
+		673022C529BBEBF2003C6E40 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BE29BBEBF2003C6E40 /* Montserrat-Light.ttf */; };
+		673022C629BBEBF2003C6E40 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BF29BBEBF2003C6E40 /* Montserrat-SemiBold.ttf */; };
+		673022C729BBEBF2003C6E40 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022C029BBEBF2003C6E40 /* Montserrat-ExtraLight.ttf */; };
+		678631E629CA169800B62228 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678631E529CA169800B62228 /* StarterView.swift */; };
+		678631E829CAF5B000B62228 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678631E729CAF5B000B62228 /* UserManager.swift */; };
+		678631F229CB5FBA00B62228 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678631F129CB5FBA00B62228 /* User.swift */; };
+		678AEE9529C023DE00D33A49 /* PasswordFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE9429C023DE00D33A49 /* PasswordFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6708583029C1DAE50039A5ED /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		6708583229C1DB0E0039A5ED /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		6708583429C2CA0F0039A5ED /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		6708583629C2CA4A0039A5ED /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6708584329C41D0F0039A5ED /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		670C86ED29CB7354000D8F20 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		670C86EF29CB762B000D8F20 /* CartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTabView.swift; sourceTree = "<group>"; };
+		670C86F129CB7649000D8F20 /* ChatTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabView.swift; sourceTree = "<group>"; };
+		6715666629C8689900FD7543 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		6715666829C86A2700FD7543 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		6715666A29C8707A00FD7543 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		6715666C29C870BC00FD7543 /* GoodsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsStore.swift; sourceTree = "<group>"; };
 		6730228E29BBABD9003C6E40 /* Online Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Online Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6730229129BBABD9003C6E40 /* Online_ShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Online_ShopApp.swift; sourceTree = "<group>"; };
-		6730229329BBABD9003C6E40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6730229529BBABD9003C6E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6730229829BBABD9003C6E40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		673022A029BBAC93003C6E40 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		673022A229BBACAE003C6E40 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		673022A429BBACBA003C6E40 /* ProfileTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabView.swift; sourceTree = "<group>"; };
+		673022A629BBACD1003C6E40 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		673022A829BBACDD003C6E40 /* FavouritesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTabView.swift; sourceTree = "<group>"; };
+		673022AA29BBC7E6003C6E40 /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
+		673022AC29BBC7F6003C6E40 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		673022AE29BBC810003C6E40 /* SignWithView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignWithView.swift; sourceTree = "<group>"; };
+		673022B929BBE9A3003C6E40 /* Online-Shop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Online-Shop-Info.plist"; sourceTree = SOURCE_ROOT; };
+		673022BA29BBEBF1003C6E40 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		673022BB29BBEBF2003C6E40 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		673022BC29BBEBF2003C6E40 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		673022BD29BBEBF2003C6E40 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		673022BE29BBEBF2003C6E40 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		673022BF29BBEBF2003C6E40 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		673022C029BBEBF2003C6E40 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		678631E529CA169800B62228 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		678631E729CAF5B000B62228 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		678631F129CB5FBA00B62228 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		678AEE9429C023DE00D33A49 /* PasswordFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +93,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6708582D29C1D9B20039A5ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6708583029C1DAE50039A5ED /* Color+Extension.swift */,
+				6708583229C1DB0E0039A5ED /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6708583C29C41A730039A5ED /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6708584329C41D0F0039A5ED /* DataManager.swift */,
+				678631E729CAF5B000B62228 /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		670C86EC29CB6B76000D8F20 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				670C86ED29CB7354000D8F20 /* TabBarView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		6715666529C8688200FD7543 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6715666A29C8707A00FD7543 /* Products.swift */,
+				6715666C29C870BC00FD7543 /* GoodsStore.swift */,
+				6715666629C8689900FD7543 /* APIServiceProtocol.swift */,
+				6715666829C86A2700FD7543 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		6730228529BBABD9003C6E40 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +149,17 @@
 		6730229029BBABD9003C6E40 /* Online Shop */ = {
 			isa = PBXGroup;
 			children = (
-				6730229129BBABD9003C6E40 /* Online_ShopApp.swift */,
-				6730229329BBABD9003C6E40 /* ContentView.swift */,
-				6730229529BBABD9003C6E40 /* Assets.xcassets */,
+				6715666529C8688200FD7543 /* Networking */,
+				6708583C29C41A730039A5ED /* Managers */,
+				6730229F29BBAC80003C6E40 /* Views */,
+				678631F029CB5FAC00B62228 /* Models */,
+				6708582D29C1D9B20039A5ED /* Extensions */,
+				673022B029BBE6DD003C6E40 /* Fonts */,
 				6730229729BBABD9003C6E40 /* Preview Content */,
+				6730229529BBABD9003C6E40 /* Assets.xcassets */,
+				673022B929BBE9A3003C6E40 /* Online-Shop-Info.plist */,
+				678631E529CA169800B62228 /* StarterView.swift */,
+				6730229129BBABD9003C6E40 /* Online_ShopApp.swift */,
 			);
 			path = "Online Shop";
 			sourceTree = "<group>";
@@ -65,6 +170,89 @@
 				6730229829BBABD9003C6E40 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6730229F29BBAC80003C6E40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				678631EC29CB119C00B62228 /* SignInView */,
+				678631ED29CB11AF00B62228 /* LoginView */,
+				670C86EC29CB6B76000D8F20 /* MainView */,
+				673022AA29BBC7E6003C6E40 /* SignInButtonView.swift */,
+				673022AC29BBC7F6003C6E40 /* TextFieldView.swift */,
+				678AEE9429C023DE00D33A49 /* PasswordFieldView.swift */,
+				673022AE29BBC810003C6E40 /* SignWithView.swift */,
+				678631EA29CAFD7800B62228 /* Tabs */,
+				678631E929CAFD6D00B62228 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		673022B029BBE6DD003C6E40 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				673022B129BBE6E7003C6E40 /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		673022B129BBE6E7003C6E40 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				673022BA29BBEBF1003C6E40 /* Montserrat-Bold.ttf */,
+				673022C029BBEBF2003C6E40 /* Montserrat-ExtraLight.ttf */,
+				673022BE29BBEBF2003C6E40 /* Montserrat-Light.ttf */,
+				673022BD29BBEBF2003C6E40 /* Montserrat-Medium.ttf */,
+				673022BB29BBEBF2003C6E40 /* Montserrat-Regular.ttf */,
+				673022BF29BBEBF2003C6E40 /* Montserrat-SemiBold.ttf */,
+				673022BC29BBEBF2003C6E40 /* Montserrat-Thin.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		678631E929CAFD6D00B62228 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		678631EA29CAFD7800B62228 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				673022A629BBACD1003C6E40 /* HomeTabView.swift */,
+				673022A829BBACDD003C6E40 /* FavouritesTabView.swift */,
+				670C86EF29CB762B000D8F20 /* CartTabView.swift */,
+				670C86F129CB7649000D8F20 /* ChatTabView.swift */,
+				673022A429BBACBA003C6E40 /* ProfileTabView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		678631EC29CB119C00B62228 /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				673022A029BBAC93003C6E40 /* SignInView.swift */,
+				6708583429C2CA0F0039A5ED /* SignInViewModel.swift */,
+			);
+			path = SignInView;
+			sourceTree = "<group>";
+		};
+		678631ED29CB11AF00B62228 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				673022A229BBACAE003C6E40 /* LoginView.swift */,
+				6708583629C2CA4A0039A5ED /* LoginViewModel.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		678631F029CB5FAC00B62228 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				678631F129CB5FBA00B62228 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +313,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673022C529BBEBF2003C6E40 /* Montserrat-Light.ttf in Resources */,
+				673022C329BBEBF2003C6E40 /* Montserrat-Thin.ttf in Resources */,
+				673022C229BBEBF2003C6E40 /* Montserrat-Regular.ttf in Resources */,
 				6730229929BBABD9003C6E40 /* Preview Assets.xcassets in Resources */,
+				673022C729BBEBF2003C6E40 /* Montserrat-ExtraLight.ttf in Resources */,
 				6730229629BBABD9003C6E40 /* Assets.xcassets in Resources */,
+				673022C429BBEBF2003C6E40 /* Montserrat-Medium.ttf in Resources */,
+				673022C629BBEBF2003C6E40 /* Montserrat-SemiBold.ttf in Resources */,
+				673022C129BBEBF2003C6E40 /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +332,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6730229429BBABD9003C6E40 /* ContentView.swift in Sources */,
+				670C86F029CB762B000D8F20 /* CartTabView.swift in Sources */,
+				678AEE9529C023DE00D33A49 /* PasswordFieldView.swift in Sources */,
+				6708584429C41D0F0039A5ED /* DataManager.swift in Sources */,
+				678631E629CA169800B62228 /* StarterView.swift in Sources */,
+				673022A729BBACD1003C6E40 /* HomeTabView.swift in Sources */,
+				6715666729C8689900FD7543 /* APIServiceProtocol.swift in Sources */,
+				673022AB29BBC7E6003C6E40 /* SignInButtonView.swift in Sources */,
+				6708583729C2CA4A0039A5ED /* LoginViewModel.swift in Sources */,
 				6730229229BBABD9003C6E40 /* Online_ShopApp.swift in Sources */,
+				673022A529BBACBA003C6E40 /* ProfileTabView.swift in Sources */,
+				6715666D29C870BC00FD7543 /* GoodsStore.swift in Sources */,
+				678631F229CB5FBA00B62228 /* User.swift in Sources */,
+				673022AF29BBC810003C6E40 /* SignWithView.swift in Sources */,
+				6708583329C1DB0E0039A5ED /* String+Extension.swift in Sources */,
+				673022A929BBACDD003C6E40 /* FavouritesTabView.swift in Sources */,
+				673022A329BBACAE003C6E40 /* LoginView.swift in Sources */,
+				673022A129BBAC93003C6E40 /* SignInView.swift in Sources */,
+				678631E829CAF5B000B62228 /* UserManager.swift in Sources */,
+				673022AD29BBC7F6003C6E40 /* TextFieldView.swift in Sources */,
+				6708583129C1DAE50039A5ED /* Color+Extension.swift in Sources */,
+				670C86EE29CB7354000D8F20 /* TabBarView.swift in Sources */,
+				670C86F229CB7649000D8F20 /* ChatTabView.swift in Sources */,
+				6715666B29C8707A00FD7543 /* Products.swift in Sources */,
+				6715666929C86A2700FD7543 /* APIClient.swift in Sources */,
+				6708583529C2CA0F0039A5ED /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,11 +488,14 @@
 				DEVELOPMENT_TEAM = T2HBBQ5KF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Online-Shop-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +503,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.home.Online-Shop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,11 +523,14 @@
 				DEVELOPMENT_TEAM = T2HBBQ5KF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Online-Shop-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +538,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.home.Online-Shop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

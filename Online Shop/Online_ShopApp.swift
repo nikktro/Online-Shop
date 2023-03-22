@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Online_ShopApp: App {
+    private var user = DataManager.shared.loadUser()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StarterView()
+                .environmentObject(UserManager(user: user))
         }
     }
+    
 }
