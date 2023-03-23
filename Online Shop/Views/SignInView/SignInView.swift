@@ -100,14 +100,6 @@ struct SignInView: View {
     }
 }
 
-
-extension SignInView {
-    private enum Field: Int, CaseIterable {
-        case firstname, lastname, email, password
-    }
-}
-
-
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView()
