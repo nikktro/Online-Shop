@@ -15,6 +15,9 @@
 		670C86EE29CB7354000D8F20 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86ED29CB7354000D8F20 /* TabBarView.swift */; };
 		670C86F029CB762B000D8F20 /* CartTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86EF29CB762B000D8F20 /* CartTabView.swift */; };
 		670C86F229CB7649000D8F20 /* ChatTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86F129CB7649000D8F20 /* ChatTabView.swift */; };
+		670C86F629CB7C61000D8F20 /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86F529CB7C61000D8F20 /* HomeTabViewModel.swift */; };
+		670C86F829CB7C99000D8F20 /* ProfileTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86F729CB7C99000D8F20 /* ProfileTabViewModel.swift */; };
+		670C86FC29CC17F5000D8F20 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670C86FB29CC17F5000D8F20 /* TabBar.swift */; };
 		6715666729C8689900FD7543 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715666629C8689900FD7543 /* APIServiceProtocol.swift */; };
 		6715666929C86A2700FD7543 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715666829C86A2700FD7543 /* APIClient.swift */; };
 		6715666B29C8707A00FD7543 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6715666A29C8707A00FD7543 /* Products.swift */; };
@@ -52,6 +55,9 @@
 		670C86ED29CB7354000D8F20 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		670C86EF29CB762B000D8F20 /* CartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTabView.swift; sourceTree = "<group>"; };
 		670C86F129CB7649000D8F20 /* ChatTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabView.swift; sourceTree = "<group>"; };
+		670C86F529CB7C61000D8F20 /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
+		670C86F729CB7C99000D8F20 /* ProfileTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewModel.swift; sourceTree = "<group>"; };
+		670C86FB29CC17F5000D8F20 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		6715666629C8689900FD7543 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		6715666829C86A2700FD7543 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		6715666A29C8707A00FD7543 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
@@ -119,6 +125,43 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
+		670C86F329CB7C1D000D8F20 /* HomeTabView */ = {
+			isa = PBXGroup;
+			children = (
+				673022A629BBACD1003C6E40 /* HomeTabView.swift */,
+				670C86F529CB7C61000D8F20 /* HomeTabViewModel.swift */,
+			);
+			path = HomeTabView;
+			sourceTree = "<group>";
+		};
+		670C86F429CB7C36000D8F20 /* ProfileTabView */ = {
+			isa = PBXGroup;
+			children = (
+				673022A429BBACBA003C6E40 /* ProfileTabView.swift */,
+				670C86F729CB7C99000D8F20 /* ProfileTabViewModel.swift */,
+			);
+			path = ProfileTabView;
+			sourceTree = "<group>";
+		};
+		670C86F929CC179F000D8F20 /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				673022AA29BBC7E6003C6E40 /* SignInButtonView.swift */,
+				673022AC29BBC7F6003C6E40 /* TextFieldView.swift */,
+				678AEE9429C023DE00D33A49 /* PasswordFieldView.swift */,
+				673022AE29BBC810003C6E40 /* SignWithView.swift */,
+			);
+			path = Prototypes;
+			sourceTree = "<group>";
+		};
+		670C86FA29CC17D2000D8F20 /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				670C86FB29CC17F5000D8F20 /* TabBar.swift */,
+			);
+			path = Prototypes;
+			sourceTree = "<group>";
+		};
 		6715666529C8688200FD7543 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,12 +221,8 @@
 				678631EC29CB119C00B62228 /* SignInView */,
 				678631ED29CB11AF00B62228 /* LoginView */,
 				670C86EC29CB6B76000D8F20 /* MainView */,
-				673022AA29BBC7E6003C6E40 /* SignInButtonView.swift */,
-				673022AC29BBC7F6003C6E40 /* TextFieldView.swift */,
-				678AEE9429C023DE00D33A49 /* PasswordFieldView.swift */,
-				673022AE29BBC810003C6E40 /* SignWithView.swift */,
+				670C86F929CC179F000D8F20 /* Prototypes */,
 				678631EA29CAFD7800B62228 /* Tabs */,
-				678631E929CAFD6D00B62228 /* Screens */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,21 +249,15 @@
 			path = Montserrat;
 			sourceTree = "<group>";
 		};
-		678631E929CAFD6D00B62228 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
 		678631EA29CAFD7800B62228 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				673022A629BBACD1003C6E40 /* HomeTabView.swift */,
+				670C86F329CB7C1D000D8F20 /* HomeTabView */,
+				670C86F429CB7C36000D8F20 /* ProfileTabView */,
+				670C86FA29CC17D2000D8F20 /* Prototypes */,
 				673022A829BBACDD003C6E40 /* FavouritesTabView.swift */,
 				670C86EF29CB762B000D8F20 /* CartTabView.swift */,
 				670C86F129CB7649000D8F20 /* ChatTabView.swift */,
-				673022A429BBACBA003C6E40 /* ProfileTabView.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -334,6 +367,7 @@
 			files = (
 				670C86F029CB762B000D8F20 /* CartTabView.swift in Sources */,
 				678AEE9529C023DE00D33A49 /* PasswordFieldView.swift in Sources */,
+				670C86F829CB7C99000D8F20 /* ProfileTabViewModel.swift in Sources */,
 				6708584429C41D0F0039A5ED /* DataManager.swift in Sources */,
 				678631E629CA169800B62228 /* StarterView.swift in Sources */,
 				673022A729BBACD1003C6E40 /* HomeTabView.swift in Sources */,
@@ -355,8 +389,10 @@
 				670C86EE29CB7354000D8F20 /* TabBarView.swift in Sources */,
 				670C86F229CB7649000D8F20 /* ChatTabView.swift in Sources */,
 				6715666B29C8707A00FD7543 /* Products.swift in Sources */,
+				670C86F629CB7C61000D8F20 /* HomeTabViewModel.swift in Sources */,
 				6715666929C86A2700FD7543 /* APIClient.swift in Sources */,
 				6708583529C2CA0F0039A5ED /* SignInViewModel.swift in Sources */,
+				670C86FC29CC17F5000D8F20 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

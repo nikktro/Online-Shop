@@ -10,6 +10,8 @@ import SwiftUI
 struct CartTabView: View {
     var body: some View {
         Text("Cart Tab View")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("BackgroundColor"))
     }
 }
 

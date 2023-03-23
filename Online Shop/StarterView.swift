@@ -29,5 +29,6 @@ struct StarterView: View {
 struct StarterView_Previews: PreviewProvider {
     static var previews: some View {
         StarterView()
+            .environmentObject(UserManager(user: User(firstName: "name", lastName: "last", email: "1@23.qwe", isLogged: true))) // TODO: add stub
     }
 }

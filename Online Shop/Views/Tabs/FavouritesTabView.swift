@@ -10,6 +10,8 @@ import SwiftUI
 struct FavouritesTabView: View {
     var body: some View {
         Text("Favourites Tab View")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("BackgroundColor"))
     }
 }
 

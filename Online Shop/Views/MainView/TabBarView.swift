@@ -8,37 +8,26 @@
 import SwiftUI
 
 struct TabBarView: View {
+    @State var selectedIndex = 0
+    let tabBarImages = ["HomeButton", "Heart", "Cart", "Chat", "User"]
+        
     var body: some View {
-        TabView {
-            HomeTabView()
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
-                }
+        ZStack {
+            switch selectedIndex {
+                case 0:
+                    HomeTabView()
+                case 1:
+                    FavouritesTabView()
+                case 2:
+                    CartTabView()
+                case 3:
+                    ChatTabView()
+                default:
+                    ProfileTabView()
+            }
             
-            FavouritesTabView()
-                .tabItem {
-                    Image(systemName: "heart")
-                    Text("Favourites")
-                }
+            TabBar(selectedIndex: $selectedIndex, tabBarImages: tabBarImages)
             
-            CartTabView()
-                .tabItem {
-                    Image(systemName: "cart")
-                    Text("Cart")
-                }
-            
-            ChatTabView()
-                .tabItem {
-                    Image(systemName: "message.fill")
-                    Text("Messages")
-                }
-            
-            ProfileTabView()
-                .tabItem {
-                    Image(systemName: "person.crop.circle")
-                    Text("Profile")
-                }
         }
     }
 }
@@ -46,5 +35,6 @@ struct TabBarView: View {
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView()
+            .environmentObject(UserManager(user: User(firstName: "name", lastName: "last", email: "email@my.work", isLogged: true))) // TODO: add stub
     }
 }

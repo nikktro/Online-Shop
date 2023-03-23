@@ -94,6 +94,7 @@ struct SignInView: View {
             .onTapGesture {
                 focusedField = false
             }
+            .background(Color("BackgroundColor"))
 
         }
     }

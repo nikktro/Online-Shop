@@ -52,6 +52,7 @@ struct LoginView: View {
         .onTapGesture {
             focusedField = false
         }
+        .background(Color("BackgroundColor"))
     }
 }
 
