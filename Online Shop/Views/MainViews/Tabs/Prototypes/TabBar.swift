@@ -23,17 +23,17 @@ struct TabBar: View {
                     .padding(.bottom, -50)
                 
                 HStack {
-                    ForEach(0..<tabBarImages.count, id: \.self) { num in
+                    ForEach(0..<tabBarImages.count, id: \.self) { index in
                         Button {
-                            selectedIndex = num
+                            selectedIndex = index
                         } label: {
                             Spacer()
                             ZStack {
                                 Circle()
                                     .frame(height: 40)
                                     .foregroundColor(Color("IconFillColor"))
-                                    .opacity(selectedIndex == num ? 1 : 0.0)
-                                Image(tabBarImages[num])
+                                    .opacity(selectedIndex == index ? 1.0 : 0.0)
+                                Image(tabBarImages[index])
                             }
                             Spacer()
                         }

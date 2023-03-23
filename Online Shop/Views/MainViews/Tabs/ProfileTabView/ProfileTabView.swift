@@ -17,25 +17,15 @@ struct ProfileTabView: View {
             VStack(spacing: 40) {
                 
                 VStack {
-                    Image("SatriaAdhiPradana")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .clipShape(Circle())
-                        .frame(height: 60)
                     
-                    Button {
+                    AvatarProfileView(image: "SatriaAdhiPradana", height: 60, buttonTitle: "Change photo") {
                         viewModel.changePhoto()
-                    } label: {
-                        Text("Change photo")
-                            .font(.custom("Montserrat-Regular", size: 9))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color("ButtonGrayTextColor"))
                     }
                     
                     Text(viewModel.fullName)
                         .font(.custom("Montserrat-Regular", size: 17))
                         .fontWeight(.bold)
-                        .foregroundColor(Color("TitleDarkGrayTextColor"))
+                        .foregroundColor(Color.titleDarkGrayTextColor)
                         .padding(.top, 10.0)
                     
                     
@@ -53,6 +43,8 @@ struct ProfileTabView: View {
                         ProfileCells(text: "Help", image: "Help")
                         ProfileCells(text: "Log Out", image: "Logout", action: { viewModel.logOut(with: userManager) })
                     }
+                    .padding(.leading, -10)
+                    .padding(.trailing, 10)
                     .frame(width: 300)
 
                     Spacer()
