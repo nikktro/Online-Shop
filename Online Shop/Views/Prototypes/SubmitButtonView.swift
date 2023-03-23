@@ -1,5 +1,5 @@
 //
-//  SignInButtonView.swift
+//  SubmitButtonView.swift
 //  Online Shop
 //
 //  Created by Nikolay Trofimov on 10.03.2023.
@@ -7,15 +7,19 @@
 
 import SwiftUI
 
-struct SignInButtonView: View {
+struct SubmitButtonView: View {
     let title: String
+    var image: String? = nil
     let action: () -> Void
     
     var body: some View {
         Button(action: action ) {
-            Text(title)
+            ZStack(alignment: .center) {
+                if image != nil { Image(image ?? "").padding(.trailing, 190) }
+                Text(title)
+                    .fontWeight(.bold)
+            }
                 .font(.custom("Montserrat-Regular", size: 14))
-                .fontWeight(.bold)
                 .foregroundColor(Color.buttonWhiteTextColor)
                 .frame(height: 46)
                 .frame(maxWidth: .infinity)
@@ -26,8 +30,8 @@ struct SignInButtonView: View {
     }
 }
 
-struct ButtonView_Previews: PreviewProvider {
+struct SubmitButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInButtonView(title: "Sign In", action: {} )
+        SubmitButtonView(title: "Sign In", action: {} )
     }
 }

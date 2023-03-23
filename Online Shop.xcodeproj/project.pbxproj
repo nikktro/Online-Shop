@@ -30,7 +30,7 @@
 		673022A529BBACBA003C6E40 /* ProfileTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022A429BBACBA003C6E40 /* ProfileTabView.swift */; };
 		673022A729BBACD1003C6E40 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022A629BBACD1003C6E40 /* HomeTabView.swift */; };
 		673022A929BBACDD003C6E40 /* FavouritesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022A829BBACDD003C6E40 /* FavouritesTabView.swift */; };
-		673022AB29BBC7E6003C6E40 /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022AA29BBC7E6003C6E40 /* SignInButtonView.swift */; };
+		673022AB29BBC7E6003C6E40 /* SubmitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022AA29BBC7E6003C6E40 /* SubmitButtonView.swift */; };
 		673022AD29BBC7F6003C6E40 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022AC29BBC7F6003C6E40 /* TextFieldView.swift */; };
 		673022AF29BBC810003C6E40 /* SignWithView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673022AE29BBC810003C6E40 /* SignWithView.swift */; };
 		673022C129BBEBF2003C6E40 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BA29BBEBF1003C6E40 /* Montserrat-Bold.ttf */; };
@@ -40,6 +40,7 @@
 		673022C529BBEBF2003C6E40 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BE29BBEBF2003C6E40 /* Montserrat-Light.ttf */; };
 		673022C629BBEBF2003C6E40 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022BF29BBEBF2003C6E40 /* Montserrat-SemiBold.ttf */; };
 		673022C729BBEBF2003C6E40 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 673022C029BBEBF2003C6E40 /* Montserrat-ExtraLight.ttf */; };
+		67609A1929CC773900F5C0B4 /* ProfileCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67609A1829CC773900F5C0B4 /* ProfileCells.swift */; };
 		678631E629CA169800B62228 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678631E529CA169800B62228 /* StarterView.swift */; };
 		678631E829CAF5B000B62228 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678631E729CAF5B000B62228 /* UserManager.swift */; };
 		678631F229CB5FBA00B62228 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678631F129CB5FBA00B62228 /* User.swift */; };
@@ -71,7 +72,7 @@
 		673022A429BBACBA003C6E40 /* ProfileTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabView.swift; sourceTree = "<group>"; };
 		673022A629BBACD1003C6E40 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		673022A829BBACDD003C6E40 /* FavouritesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTabView.swift; sourceTree = "<group>"; };
-		673022AA29BBC7E6003C6E40 /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
+		673022AA29BBC7E6003C6E40 /* SubmitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButtonView.swift; sourceTree = "<group>"; };
 		673022AC29BBC7F6003C6E40 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		673022AE29BBC810003C6E40 /* SignWithView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignWithView.swift; sourceTree = "<group>"; };
 		673022B929BBE9A3003C6E40 /* Online-Shop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Online-Shop-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -82,6 +83,7 @@
 		673022BE29BBEBF2003C6E40 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		673022BF29BBEBF2003C6E40 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		673022C029BBEBF2003C6E40 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		67609A1829CC773900F5C0B4 /* ProfileCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCells.swift; sourceTree = "<group>"; };
 		678631E529CA169800B62228 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		678631E729CAF5B000B62228 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		678631F129CB5FBA00B62228 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -146,7 +148,7 @@
 		670C86F929CC179F000D8F20 /* Prototypes */ = {
 			isa = PBXGroup;
 			children = (
-				673022AA29BBC7E6003C6E40 /* SignInButtonView.swift */,
+				673022AA29BBC7E6003C6E40 /* SubmitButtonView.swift */,
 				673022AC29BBC7F6003C6E40 /* TextFieldView.swift */,
 				678AEE9429C023DE00D33A49 /* PasswordFieldView.swift */,
 				673022AE29BBC810003C6E40 /* SignWithView.swift */,
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				670C86FB29CC17F5000D8F20 /* TabBar.swift */,
+				67609A1829CC773900F5C0B4 /* ProfileCells.swift */,
 			);
 			path = Prototypes;
 			sourceTree = "<group>";
@@ -372,10 +375,11 @@
 				678631E629CA169800B62228 /* StarterView.swift in Sources */,
 				673022A729BBACD1003C6E40 /* HomeTabView.swift in Sources */,
 				6715666729C8689900FD7543 /* APIServiceProtocol.swift in Sources */,
-				673022AB29BBC7E6003C6E40 /* SignInButtonView.swift in Sources */,
+				673022AB29BBC7E6003C6E40 /* SubmitButtonView.swift in Sources */,
 				6708583729C2CA4A0039A5ED /* LoginViewModel.swift in Sources */,
 				6730229229BBABD9003C6E40 /* Online_ShopApp.swift in Sources */,
 				673022A529BBACBA003C6E40 /* ProfileTabView.swift in Sources */,
+				67609A1929CC773900F5C0B4 /* ProfileCells.swift in Sources */,
 				6715666D29C870BC00FD7543 /* GoodsStore.swift in Sources */,
 				678631F229CB5FBA00B62228 /* User.swift in Sources */,
 				673022AF29BBC810003C6E40 /* SignWithView.swift in Sources */,

@@ -19,6 +19,7 @@ extension Color {
     static let textFieldFillColor = Color("TextFieldFillColor")
     static let textFieldTextColor = Color("TextFieldTextColor")
     static let titleBlackTextColor = Color("TitleBlackTextColor")
+    static let titleDarkGrayTextColor = Color("TitleDarkGrayTextColor")
     static let titleLargeTextColor = Color("TitleLargeTextColor")
     static let titleSmallTextColor = Color("TitleSmallTextColor")
 }

@@ -30,7 +30,7 @@ struct LoginView: View {
                     PasswordFieldView(password: $viewModel.password)
                         .padding(.bottom, 64)
                     
-                    SignInButtonView(title: "Login", action: {
+                    SubmitButtonView(title: "Login", action: {
                         viewModel.login(with: userManager)
                     } )
                     

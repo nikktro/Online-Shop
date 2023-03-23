@@ -35,7 +35,7 @@ struct SignInView: View {
                             .keyboardType(.emailAddress)
                             .disableAutocorrection(true)
                         
-                        SignInButtonView(title: "Sign in", action: {
+                        SubmitButtonView(title: "Sign in", action: {
                             viewModel.signIn(with: userManager)
                         })
                     }
