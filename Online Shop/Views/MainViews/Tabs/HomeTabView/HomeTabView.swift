@@ -11,6 +11,7 @@ struct HomeTabView: View {
     
     @EnvironmentObject private var userManager: UserManager
     @ObservedObject var viewModel = HomeTabViewModel()
+    @FocusState private var focusedField: Bool
         
     var body: some View {
         NavigationView {
@@ -29,6 +30,7 @@ struct HomeTabView: View {
                     VStack {
                         SearchBarView(searchQueryText: $viewModel.searchQueryText) { viewModel.searchButtonTapped() }
                             .frame(width: 260)
+                            .focused($focusedField)
                         
                         ProductCategoryBarView(selectedIndex: .constant(0), barItemNames: viewModel.categories)
                         
@@ -47,10 +49,16 @@ struct HomeTabView: View {
                         .padding(.horizontal, 8)
                         .padding(.bottom, 40)
                         .opacity(viewModel.isFetchingDone ? 1.0 : 0.0)
+                        .onTapGesture {
+                            focusedField = false
+                        }
                         
                         Spacer()
                     }
                     .padding(.top, 16)
+                    .onTapGesture {
+                        focusedField = false
+                    }
                     .onAppear {
                         Task {
                             await viewModel.fetchRequest()
