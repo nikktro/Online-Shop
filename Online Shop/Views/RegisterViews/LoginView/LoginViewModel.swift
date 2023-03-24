@@ -22,7 +22,7 @@ final class LoginViewModel: LoginViewModelProtocol, ObservableObject {
     @Published var password: String = ""
     
     func login(with userManager: UserManager) {
-        if firstname == userManager.user.firstName && password == "1234" {
+        if firstname.lowercased() == userManager.user.firstName.lowercased() && password == "1234" {
             userManager.user.isLogged = true
             userManager.update(user: userManager.user)
             DataManager.shared.save(user: userManager.user)
