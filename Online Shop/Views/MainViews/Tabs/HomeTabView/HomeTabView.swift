@@ -16,37 +16,45 @@ struct HomeTabView: View {
         NavigationView {
             VStack {
                 ZStack {
-                    Image("page 1")
-                        .opacity(0.0)
-                        .padding(.top, -54)
+                    VStack {
+                        Text("Loading...")
+                        ActivityIndicator(isAnimating: .constant(true), style: .large)
+                    }
+                    .frame(width: 150, height: 100)
+                    .background(Color.secondary.colorInvert())
+                    .foregroundColor(Color.primary)
+                    .cornerRadius(20)
+                    .opacity(viewModel.isFetchingDone ? 0.0 : 1.0)
                     
                     VStack {
-                        SearchBarView(searchQueryText: $viewModel.searchQueryText)
+                        SearchBarView(searchQueryText: $viewModel.searchQueryText) { viewModel.searchButtonTapped() }
                             .frame(width: 260)
                         
                         ProductCategoryBarView(selectedIndex: .constant(0), barItemNames: viewModel.categories)
                         
                         ScrollView(showsIndicators: false) {
-                            CarouselLatest(carouselTitle: "Latest")
+                            CarouselLatest(carouselTitle: "Latest", latests: viewModel.latests)
                                 .padding(.top, 16)
                                 
-                            CarouselFlashSale(carouselTitle: "Flash Sale")
+                            CarouselFlashSale(carouselTitle: "Flash Sale", flashSales: viewModel.flashSales)
                                 .padding(.top, 12)
                             
                             CarouselBrands(carouselTitle: "Brands")
                                 .padding(.top, 12)
+                                
                             
                         }
                         .padding(.horizontal, 8)
-                        .padding(.bottom, 80)
-                        
-                        
+                        .padding(.bottom, 40)
+                        .opacity(viewModel.isFetchingDone ? 1.0 : 0.0)
                         
                         Spacer()
                     }
-                    .padding(.top, 56)
+                    .padding(.top, 16)
                     .onAppear {
-                        print("ContentView appeared!")
+                        Task {
+                            await viewModel.fetchRequest()
+                        }
                     }
                     
                 }

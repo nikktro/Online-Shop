@@ -11,24 +11,18 @@ struct FlashSaleItemView: View {
     
     let flashSale: FlashSale
     
-//    let category: String
-//    let name: String
-//    let price: String
-//    let image: UIImage
-//    let discount: Int
-//    let store: String
-//    let isFavourite: Bool
-    
-    // TODO: Spacer instead padding
-    
     var body: some View {
         ZStack {
             
-            Image(uiImage: UIImage(named: "FlashSale") ?? UIImage()) // TODO: Async load from URL
-                .resizable()
-                .scaledToFill()
-                .frame(width: 174, height: 221)
-                .cornerRadius(8)
+            AsyncImage(url: URL(string: flashSale.imageURL), content: { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 174, height: 221)
+                    .cornerRadius(10)
+            }) {
+                Color.gray
+            }
             
             Image("ic-User")
                 .padding(.top, -103)

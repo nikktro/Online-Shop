@@ -35,6 +35,6 @@ struct TabBarView: View {
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView()
-            .environmentObject(UserManager(user: User(firstName: "name", lastName: "last", email: "email@my.work", isLogged: true))) // TODO: add stub
+            .environmentObject(UserManager(user: User(firstName: "name", lastName: "last", email: "email@my.work", isLogged: true)))
     }
 }

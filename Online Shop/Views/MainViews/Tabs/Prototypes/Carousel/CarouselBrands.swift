@@ -23,8 +23,7 @@ struct CarouselBrands: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 10) {
                     ForEach(brands, id: \.self) { num in
-                        
-                        LatestItemView(latest: Latest(category: "Brands", name: num, price: Double(Int.random(in: 10...100)), imageURL: ""))
+                        BrandItemView(name: num)
                     }
                 }
             }

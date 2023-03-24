@@ -10,19 +10,19 @@ import SwiftUI
 struct LatestItemView: View {
     
     let latest: Latest
-//    let category: String
-//    let name: String
-//    let price: String
-//    let image: UIImage
     
     var body: some View {
         ZStack {
 
-            Image(uiImage: UIImage(named: "PhoneImage") ?? UIImage()) // TODO: Async load from URL
-                .resizable()
-                .scaledToFill()
-                .frame(width: 114, height: 149)
-                .cornerRadius(8)
+            AsyncImage(url: URL(string: latest.imageURL), content: { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 114, height: 149)
+                    .cornerRadius(10)
+            }) {
+                Color.gray
+            }
             
                 VStack(alignment: .leading) {
                     Spacer()

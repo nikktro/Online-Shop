@@ -10,6 +10,7 @@ import SwiftUI
 struct SearchBarView: View {
     
     @Binding var searchQueryText: String
+    let action: () -> Void
         
     var body: some View {
         VStack {
@@ -24,9 +25,7 @@ struct SearchBarView: View {
                 
                 HStack() {
                     Spacer()
-                    Button {
-                        print("Search button Tapped") // TODO: move to VM
-                    } label: {
+                    Button(action: action) {
                         Image("ic-Search")
                             .padding(.trailing, 16)
                     }
@@ -44,6 +43,6 @@ struct SearchBarView: View {
 
 struct SearchBarView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBarView(searchQueryText: .constant(""))
+        SearchBarView(searchQueryText: .constant("")) {}
     }
 }
