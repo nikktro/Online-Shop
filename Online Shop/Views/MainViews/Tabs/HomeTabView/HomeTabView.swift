@@ -26,10 +26,28 @@ struct HomeTabView: View {
                         
                         ProductCategoryBarView(selectedIndex: .constant(0), barItemNames: viewModel.categories)
                         
-                        Spacer()
+                        ScrollView(showsIndicators: false) {
+                            CarouselLatest(carouselTitle: "Latest")
+                                .padding(.top, 16)
+                                
+                            CarouselFlashSale(carouselTitle: "Flash Sale")
+                                .padding(.top, 12)
+                            
+                            CarouselBrands(carouselTitle: "Brands")
+                                .padding(.top, 12)
+                            
+                        }
+                        .padding(.horizontal, 8)
+                        .padding(.bottom, 80)
                         
+                        
+                        
+                        Spacer()
                     }
                     .padding(.top, 56)
+                    .onAppear {
+                        print("ContentView appeared!")
+                    }
                     
                 }
             }
