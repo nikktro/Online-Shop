@@ -101,7 +101,7 @@ struct HomeTabView: View {
                         print("Avatar Menu button tapped")
                     } label: {
                         VStack {
-                            AvatarProfileView(image: "SatriaAdhiPradana", height: 30, buttonTitle: "Location ⅴ") {}
+                            AvatarView(image: "SatriaAdhiPradana", height: 30, buttonTitle: "Location ⅴ", imageStrokeColor: Color.strokeDarkGrayColor, textColor: Color.textFieldSearchColor) {}
                         }
                     }
                     .padding(.trailing, 24)

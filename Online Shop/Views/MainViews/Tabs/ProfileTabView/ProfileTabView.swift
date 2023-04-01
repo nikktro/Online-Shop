@@ -18,7 +18,7 @@ struct ProfileTabView: View {
                 
                 VStack {
                     
-                    AvatarProfileView(image: "SatriaAdhiPradana", height: 60, buttonTitle: "Change photo") {
+                    AvatarView(image: "SatriaAdhiPradana", height: 60, buttonTitle: "Change photo", imageStrokeColor: Color.strokeLightGrayColor, textColor: Color.buttonGrayTextColor) {
                         viewModel.changePhoto()
                     }
                     

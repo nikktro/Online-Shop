@@ -1,16 +1,18 @@
 //
-//  AvatarHomeView.swift
+//  AvatarView.swift
 //  Online Shop
 //
-//  Created by Nikolay Trofimov on 23.03.2023.
+//  Created by Nikolay Trofimov on 01.04.2023.
 //
 
 import SwiftUI
 
-struct AvatarHomeView: View {
+struct AvatarView: View {
     let image: String
     let height: CGFloat
     let buttonTitle: String
+    let imageStrokeColor: Color
+    let textColor: Color
     let action: () -> Void
     
     var body: some View {
@@ -20,20 +22,20 @@ struct AvatarHomeView: View {
                 .aspectRatio(contentMode: .fit)
                 .clipShape(Circle())
                 .frame(height: height)
-                .overlay(Circle().stroke(Color.strokeDarkGrayColor, lineWidth: 1))
+                .overlay(Circle().stroke(imageStrokeColor, lineWidth: 1))
             
             Button(action: action) {
                 Text(buttonTitle)
                     .font(.custom("Montserrat-Regular", size: 9))
                     .fontWeight(.regular)
-                    .foregroundColor(Color.textFieldSearchColor)
+                    .foregroundColor(textColor)
             }
         }
     }
 }
 
-struct AvatarHomeView_Previews: PreviewProvider {
+struct AvatarView_Previews: PreviewProvider {
     static var previews: some View {
-        AvatarHomeView(image: "SatriaAdhiPradana", height: 40, buttonTitle: "Location V", action: {})
+        AvatarView(image: "SatriaAdhiPradana", height: 60, buttonTitle: "Change photo", imageStrokeColor: .gray, textColor: .black, action: {})
     }
 }
