@@ -35,8 +35,4 @@ final class APIClient: APIServiceProtocol {
         
     }
     
-//    func fetchURL(url: String) ->  {
-//        
-//    }
-        
 }

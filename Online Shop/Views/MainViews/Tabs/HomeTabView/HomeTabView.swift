@@ -33,10 +33,12 @@ struct HomeTabView: View {
                             .focused($focusedField)
                         
                         ProductCategoryBarView(selectedIndex: .constant(0), barItemNames: viewModel.categories)
+                            .padding(.leading, 8)
+                            .padding(.top, 8)
                         
                         ScrollView(showsIndicators: false) {
                             CarouselLatest(carouselTitle: "Latest", latests: viewModel.latests)
-                                .padding(.top, 16)
+                                .padding(.top, 30)
                                 
                             CarouselFlashSale(carouselTitle: "Flash Sale", flashSales: viewModel.flashSales)
                                 .padding(.top, 12)

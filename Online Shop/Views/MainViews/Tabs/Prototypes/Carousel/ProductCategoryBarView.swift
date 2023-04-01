@@ -22,24 +22,23 @@ struct ProductCategoryBarView: View {
                         Spacer()
                         VStack {
                             ZStack {
-                                Circle()
-                                    .frame(height: 40)
+                                Ellipse()
+                                    .frame(width: 42, height: 38)
                                     .foregroundColor(Color("IconFillColor"))
                                 Image(barItemNames[index])
                             }
                             Text(barItemNames[index])
                                 .font(.custom("Montserrat-SemiBold", size: 8))
+                                .scaledToFill()
                                 .foregroundColor(Color.iconBarGrayTextColor)
                                 .lineLimit(0)
                                 .padding(.top, 2)
                         }
+                        .frame(width: 44)
                         Spacer()
                     }
                 }
             }
-            .padding(.trailing, 8)
-            .padding(.leading, 8)
-            .padding(.top, 10)
         }
     }
 }
